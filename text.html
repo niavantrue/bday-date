@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>happy birthday<3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/animals-and-birds/cat-face-color-icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="text-center mt-5 m-auto">
+        <button class="button" onclick="typeWriter()">click me!</button>
+    </div>
+
+    <div class="text-center mt-4  w-75 m-auto">
+        <h4 class="display-7 fw-bold" id="demo"></h4>
+    </div>
+    
+    <script>
+    var i = 0;
+    var txt = 'hii, sayangku. i believe its been a few days since your birthday, and i hope it was as wonderful and special as you deserve. youve been fighting hard for 19 years, and thats such an incredible accomplishment! im so proud of you, sayangku. semoga kamu selalu dikelilingi dengan hal-hal positif di hidupmu. and oh, also... its a shame we havent celebrated this special day together yet :( but dont worry, im going to ask about that on the next page!';
+    var speed = 75;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+    <div class="text-center mt-5 pt-3 m-auto">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3d6YTl1ZGtycWZ4cHEwMGtlb2JoYWpvcWJ1dnh1b3V2MGIyb3ZiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/IZeD7640vrVsjUKlYT/giphy.webp" 
+        alt="Starter GIF" width="300" height="300">
+    </div>
+    <div class="text-center mt-5 pt-2 w-75 m-auto">
+        <a href="dates.html" class="button buttonAny" target="_self">next</a>
+    </div>
+</body>
+</html>
